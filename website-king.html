@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css.css" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/2a6f1f8df7.js" crossorigin="anonymous"></script>
+    <title>Website - King</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="transparent z-depth-0">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">KingsBass</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                    <ul class="center hide-on-med-and-down" id="ul1">
+                        <li class="active">
+                            <a class="active-link" href="file:///C:/Users/king/Documents/CODES/website-king.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Solution.html">Kinds and Parts</a>
+                        </li>
+                        <li>
+                            <a href="Signup.html">Sign Up</a>
+                        </li>
+                        <li>
+                            <a class="btn brown modal-trigger z-depth-0" href="#login-modal">Login</a>
+                        </li>
+                    </ul>
+
+                    <!-- Sidenav -->
+                    <ul class="sidenav" id="mobile-nav">
+                        <h4 class="brown-text text-darken-4 center">KingsBass</h4>
+                        <li class="active">
+                            <a href="file:///C:/Users/king/Documents/CODES/website-king.html" class="active-link">Home</a>
+                            </li>
+                             <li class="#">
+                             <a href="Solution.html" class="#">Kinds & Parts</a>
+                             </li>
+                             <li class="#">
+                              <a href="Signup.html" class="#">Sign up</a>
+                            </li>
+                            <a href="#" class="btn brown">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Showcase -->
+        <div class="showcase container">
+            <div class="row">
+                <div class="col s12 m10 offset-m1 center">
+                    <h5 class="white-text">Welcome to</h5>
+                    <h1 style="color:rgb(167, 164, 164)" font-family: Brush Script MT, cursive;>KingsBASS</h1>
+                    <p class="white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi laborum sapiente neque beatae, nesciunt veniam!</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <footer class="page-footer brown lighten-1">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5 class="white-text">About Us</h5>
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, maiores necessitatibus ea reprehenderit soluta porro eligendi tempore! Velit, facilis sapiente.</p>
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/acku.pillows"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kingorza/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright brown darken-1">
+            <div class="container">
+                &copy; 2021 KingsBASS, Inc. All Rights Reserved 
+                <a href="#!" class="grey-text text-lighten-4 right">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <h4>Account Login</h4>
+            <p>Login to access your account dashboard</p>
+            <form>
+                <div class="input-field">
+                    <input type="email" id="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="password">
+                    <label for="password">Password</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="file:///C:/Users/king/Documents/CODES/Signup.html" class="modal-action modal-close btn grey"></i>Register</a>
+            <a href="#!" class="modal-action modal-close btn brown"><i class="fa fa-lock"></i> Login</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav({
+                edge: 'left',
+                inDduration: 150,
+                outDuration: 150
+            }); 
+            $('.modal').modal();
+            setInterval(function(){
+                $('#slide').carousel('next');
+            },5000);
+        });
+    </script>
+</body>
+</html>

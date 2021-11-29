@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="4STRING.css" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/2a6f1f8df7.js" crossorigin="anonymous"></script>
+    <title>project test</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header-inner">
+        <nav class="brown">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo">KingsBASS</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="file:///C:/Users/king/Documents/CODES/website-king.html">Home</a>
+                        </li>
+                        <li class="active">
+                            <a class="active-link" href="solution.html">Kinds and Parts</a>
+                        </li>
+                        <li>
+                            <a href="signup.html">Sign Up</a>
+                        </li>
+                        <li>
+                            <a class="btn brown modal-trigger" href="#login-modal">Login</a>
+                        </li>  
+                    </ul>
+
+                    <!-- Sidenav -->
+                    <ul class="sidenav" id="mobile-nav">
+                        <h4 class="brown-text text-darken-4 center">KingsBass</h4>
+                        <li class="active">
+                            <a href="file:///C:/Users/king/Documents/CODES/website-king.html" class="active-link">Home</a>
+                            </li>
+                             <li class="#">
+                             <a href="Solution.html" class="#">Kinds & Parts</a>
+                             </li>
+                             <li class="#">
+                              <a href="Signup.html" class="#">Sign up</a>
+                            </li>
+                            <a href="#" class="btn brown">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    <div class="row">
+        <div class="col s12 m10 offset-m1 center">
+            <br><br><br><br>
+            <h2><b>4 STRING</b></h2>
+            <br><br><br><br>   
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="bass1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="bass2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="bass3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav({
+                edge: 'left',
+                inDduration: 150,
+                outDuration: 150
+            });
+            $('.modal').modal();
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+</html>
